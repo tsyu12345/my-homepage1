@@ -1,0 +1,37 @@
+body {
+    padding-top: 15px;
+    background-color:lightgray;
+}
+
+.start_temp {
+    background-color:white;
+    margin: 20px;
+}
+
+.top-image {
+    position: relative;
+}
+
+.profile {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.profile-img {
+    display: block;
+    width: 160px;
+    height: 160px;
+    border-radius:50%;
+    margin: auto;
+  }
+
+.profile-name {
+    color: white;
+    text-align:center;
+    font-weight:bold;
+    font-size:1.2rem;
+    margin: 1rem auto 1rem;
+    letter-spacing:.1rem;
+}
