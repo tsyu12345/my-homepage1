@@ -30,35 +30,6 @@ img#my-img {
     padding-bottom: 5px;
 }
 
-nav {
-    list-style-type: none;
-    overflow: hidden;
-    font-size: 0;
-}
-
-nav ul {
-    width: auto;
-    margin: 0 auto;
-    font-size: 0;
-}
-nav ul li {
-    display: inline;
-    list-style-type: none;
-    width: 250px;
-    text-align: center;
-    background-color: rgb(251, 251, 251);
-    float: left;
-    line-height: 50px;
-    border: 1px solid lightgray;
-    font-size: 16px;
-}
-
-
-nav li a {
-    text-decoration: none;
-    color: rgba(121, 115, 115, 0.767);
-    font-weight: bold;
-}
 
 article {
     margin-top: 50px;
@@ -70,6 +41,12 @@ article {
     width: 50%;
     margin: 0 auto;
     margin-bottom: 70px;
+}
+
+.main-text {
+    display: flex;
+    justify-content: center;
+    background-color: black;
 }
 
 .menu-name {
@@ -87,5 +64,10 @@ article {
 }
 #news ul {
     margin: 0;
-    
+}
+
+#portfolio img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
 }
