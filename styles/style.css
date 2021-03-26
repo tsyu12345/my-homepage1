@@ -8,6 +8,7 @@ header {
     background-color: rgb(14, 18, 20);
     border-bottom: 2px solid black;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
 }
 
 .loop_wrap {
@@ -19,7 +20,6 @@ header {
 }
 
 .slide li {
-    background-color: aliceblue;
     display: inline-block;
     width: min-content;
 }
@@ -48,11 +48,11 @@ header {
   }
 
 .loop_wrap ul:first-child {
-    animation: loop 120s -60s linear infinite;
+    animation: loop 180s -90s linear infinite;
 }
   
 .loop_wrap ul:last-child {
-    animation: loop2 120s linear infinite;
+    animation: loop2 180s linear infinite;
 }
 
 .navbar {
@@ -148,11 +148,45 @@ article {
     margin: 0;
 }
 
-.main-text {
-}
 
 #portfolio img {
     width: 250px;
     height: 250px;
     object-fit: cover;
+}
+
+footer {
+    background-color: black;
+    color: whitesmoke;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+footer .container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.bottom-nav {
+    list-style-type: square;
+}
+.bottom-nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+.bottom-nav li a {
+    color: whitesmoke;
+}
+
+.sns-icons {
+    list-style-type: none;
+}
+
+.sns-icons li {
+    display: inline-block;
+    margin: 10px;
+}
+.my-icon {
+    color: whitesmoke;
 }
