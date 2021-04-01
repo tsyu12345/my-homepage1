@@ -60,6 +60,9 @@ header {
     margin-top: 50px;
 }
 
+#gnav.affix {
+    top: 0px;
+}
 
 .navbar button {
     border: solid 1px black;
