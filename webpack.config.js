@@ -6,7 +6,7 @@ const path = require("path");
 const isProduction = process.env.NODE_ENV == "production";
 
 const config = {
-	target: "web",
+	target: ["web", "es5"],
 	entry: "./src/index.tsx",
 	output: {
 		path: path.resolve(__dirname, "dist"),
