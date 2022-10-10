@@ -1,5 +1,8 @@
 module.exports = {
-  content: ["./src/.{html,js,ts,jsx,tsx}"],
+  content: [
+    './src/**/*.html',
+    './src/**/*.js',
+  ],
   purge: [],
   darkMode: false, // or 'media' or 'class'
   theme: {
