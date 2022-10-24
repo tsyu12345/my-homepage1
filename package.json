@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "css-build": "npx tailwindcss -i ./src/input.css -o ./dist/dist.css",
-    "build": "webpack --mode=production --node-env=production",
+    "build": "npx tailwindcss -i ./src/input.css -o ./dist/dist.css && webpack --mode=production --node-env=production",
     "build:dev": "webpack --mode=development",
     "build:prod": "webpack --mode=production --node-env=production",
     "watch": "webpack --watch",
