@@ -6,8 +6,8 @@ type Props = {
 
 export const Background = (props: Props) => {
     return (
-        <div id="background">
-            <img src={props.src} alt="工事中画像" />
+        <div id="background" className="mx-5">
+            <img src={props.src} alt="工事中画像" className="mx-auto w-4/5"/>
         </div>
     );
 }
