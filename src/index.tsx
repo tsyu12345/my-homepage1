@@ -9,7 +9,6 @@ import "./Components/lib/images/kkrn_icon_koujichuu_1.png";
 //import { Footer } from "./Components/MainFooter/Footer";
 //import { Header } from "./Components/MainHeader/Header";
 
-//todo:imgの読み込みができない。ローダーが不足と推測する。
 
 const App = () => {
     return (

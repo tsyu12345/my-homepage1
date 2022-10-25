@@ -6,9 +6,6 @@
   "scripts": {
     "css-build": "npx tailwindcss -i ./src/input.css -o ./dist/dist.css",
     "build": "npx tailwindcss -i ./src/input.css -o ./dist/dist.css && webpack --mode=production --node-env=production",
-    "build:dev": "webpack --mode=development",
-    "build:prod": "webpack --mode=production --node-env=production",
-    "watch": "webpack --watch",
     "start": "webpack server --open --mode=development"
   },
   "repository": {
@@ -38,6 +35,7 @@
     "babel-loader": "^8.2.5",
     "css-loader": "^6.7.1",
     "html-webpack-plugin": "^5.5.0",
+    "mini-css-extract-plugin": "^2.6.1",
     "postcss": "^8.4.17",
     "postcss-loader": "^7.0.1",
     "postcss-preset-env": "^7.8.2",
