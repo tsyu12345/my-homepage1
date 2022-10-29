@@ -5,16 +5,19 @@ import { createRoot } from 'react-dom/client';
 
 import { Body } from "./Components/MainBody/Body";
 import { Background } from './Components/background/Background';
+import { Header } from './Components/Header/Header';
 import "./Components/lib/images/kkrn_icon_koujichuu_1.png";
 //import { Footer } from "./Components/MainFooter/Footer";
-//import { Header } from "./Components/MainHeader/Header";
 
 
 const App = () => {
     return (
-        <div id="main">
+        <div id="body-container">
             <Background src="./Components/lib/images/kkrn_icon_koujichuu_1.png" />
-            <Body />
+            <div id="contents-container">
+                <Header />
+                <Body />
+            </div>
         </div>
     );
 }
