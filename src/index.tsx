@@ -7,17 +7,18 @@ import { Body } from "./Components/MainBody/Body";
 import { Background } from './Components/background/Background';
 import { Header } from './Components/Header/Header';
 import "./Components/lib/images/kkrn_icon_koujichuu_1.png";
-//import { Footer } from "./Components/MainFooter/Footer";
+import { Footer } from "./Components/Footer/Footer";
 
 
 const App = () => {
     return (
-        <div id="body-container">
+        <div id="body-container" className="w-full">
             <Background src="./Components/lib/images/kkrn_icon_koujichuu_1.png" />
-            <div id="contents-container">
-                <Header />
+            <Header />
+            <div id="contents-container" className="w-full absolute top-0 mt-[75px]">
                 <Body />
             </div>
+            <Footer />
         </div>
     );
 }

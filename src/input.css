@@ -4,8 +4,3 @@
 @import "Components/background/style.css";
 @import "Components/MainBody/style.css";
 @import "Components/Header/style.css";
-
-#contents-container {
-    position: absolute;
-    top: 0;
-}
