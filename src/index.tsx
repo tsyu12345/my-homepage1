@@ -5,9 +5,11 @@ import { createRoot } from 'react-dom/client';
 
 import { Body } from "./Components/MainBody/Body";
 import { Background } from './Components/background/Background';
-import { Header } from './Components/Header/Header';
 import "./Components/lib/images/kkrn_icon_koujichuu_1.png";
+import { Header } from './Components/Header/Header';
 import { Footer } from "./Components/Footer/Footer";
+
+
 
 
 const App = () => {
@@ -15,7 +17,7 @@ const App = () => {
         <div id="body-container" className="w-full">
             <Background src="./Components/lib/images/kkrn_icon_koujichuu_1.png" />
             <Header />
-            <div id="contents-container" className="w-full absolute top-0 mt-[75px]">
+            <div id="contents-container" className="w-full h-[510px] absolute top-0 mt-[75px] overflow-y-scroll">
                 <Body />
             </div>
             <Footer />
