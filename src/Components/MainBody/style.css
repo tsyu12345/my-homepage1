@@ -1,0 +1,31 @@
+#main-msg-area {
+    margin: auto;
+    padding-top: 90px;
+    padding-bottom: 50px;
+}
+
+#main-msg-area #title {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 1.9em;
+    font-weight: bold;
+}
+
+#main-msg-area #mainText {
+    margin: 50px auto;
+    width: 80%;
+    padding: 0px 120px;
+}
+
+#main-msg-area #mainText .msg {
+    text-align: center
+}
+
+.info-text-wrapper {
+    margin-top: 30px;
+}
+
+.info-text-wrapper .info-msg {
+    margin-top: 10px;
+}

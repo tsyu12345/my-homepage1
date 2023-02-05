@@ -14,7 +14,7 @@ export const InfoText: React.FC<Props>= (props: Props) => {
     const text: string = props.text;
     
     return (
-        <div className="info-msg mx-auto">
+        <div className="info-msg">
             <div className="">
                 <p className="">{props.title}</p>
                 <p>{props.text}</p>
