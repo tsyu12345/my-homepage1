@@ -514,11 +514,17 @@ video {
 .absolute {
   position: absolute;
 }
+.relative {
+  position: relative;
+}
 .top-0 {
   top: 0px;
 }
 .bottom-0 {
   bottom: 0px;
+}
+.bottom-\[-35px\] {
+  bottom: -35px;
 }
 .mx-auto {
   margin-left: auto;
