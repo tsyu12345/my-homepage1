@@ -24,8 +24,17 @@
 
 .info-text-wrapper {
     margin-top: 30px;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .info-text-wrapper .info-msg {
     margin-top: 10px;
+}
+
+@media screen and (max-width:400px) {
+    #main-msg-area #mainText {
+        padding: 0px;
+    }
 }
