@@ -29,3 +29,9 @@
 .info-text-wrapper .info-msg {
     margin-top: 10px;
 }
+
+@media screen and (max-width:400px) {
+    #main-msg-area #mainText {
+        padding: 0px;
+    }
+}

@@ -10,6 +10,12 @@
     background-repeat: no-repeat;
     /*box-shadow: 0 10px 25px 0 rgba(0,0,0, 0.5);*/
 }
+
+@media screen and (max-width:400px) {
+    #background {
+        margin-top: 280px;
+    }
+}
 #main-msg-area {
     margin: auto;
     padding-top: 90px;
@@ -40,6 +46,12 @@
 
 .info-text-wrapper .info-msg {
     margin-top: 10px;
+}
+
+@media screen and (max-width:400px) {
+    #main-msg-area #mainText {
+        padding: 0px;
+    }
 }
 #header {
     background-color: black;
