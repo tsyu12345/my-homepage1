@@ -1,0 +1,26 @@
+{
+  "name": "my-homepage",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tsyu12345/my-homepage1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tsyu12345/my-homepage1/issues"
+  },
+  "homepage": "https://github.com/tsyu12345/my-homepage1#readme",
+  "volta": {
+    "node": "19.7.0"
+  },
+  "dependencies": {
+    "nuxt": "^3.4.3"
+  }
+}
