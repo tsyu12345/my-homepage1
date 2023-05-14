@@ -1,0 +1,13 @@
+===browser===
+・chrome
+・edge
+・Mac safari
+・iOS safari
+・Android chrome
+
+===devices===
+・iPad
+・iPhone
+・Android SmartPhones
+・Mac 
+・Windows PC

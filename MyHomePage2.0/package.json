@@ -3,10 +3,9 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "nuxt",
-    "build": "nuxt build",
-    "start": "nuxt start",
-    "generate": "nuxt generate"
+    "build": "nuxt build && nuxt generate",
+    "start": "nuxt",
+    "prod-start": "nuxt start"
   },
   "dependencies": {
     "core-js": "^3.25.3",
