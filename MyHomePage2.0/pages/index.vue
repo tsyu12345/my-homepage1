@@ -5,8 +5,10 @@
         {{ name.first }} <br> {{ name.second }}
       </h1>
     </div>
-    <div id="content-area">
-      <div id="twitter-area"></div>
+    <div id="content-area" class="p-[40px]">
+      <div id="TwitteriFrame-area" class="w-1/2">
+        <TwitteriFrame />
+      </div>
       <div id="menu-area"></div>
       <div id="github-grass-area"></div>
     </div>
@@ -19,9 +21,15 @@
 
 <script lang="ts">
 import Vue from 'vue'
+import TwitteriFrame from '~/components/TwitteriFrame.vue';
 
 export default Vue.extend({
   name: 'IndexPage',
+
+  components: {
+    TwitteriFrame,
+  },
+
   data() {
     return {
       name: {
