@@ -4,7 +4,10 @@
             <v-icon large left color="#26c6da"></v-icon>
         </v-card-title>
         <v-flex xs12>
-            <Timeline :id="user_id" sourceType="profile" :options="{ tweetLimit: '1' }" />
+            <Timeline 
+                :id="user_id" 
+                sourceType="profile" 
+                :options="{ tweetLimit: '3' }" />
         </v-flex>
     </v-card>
 </template>

@@ -9,11 +9,11 @@ export default {
   head: {
     title: 'MyHomePage2.0',
     htmlAttrs: {
-      lang: 'en'
+      lang: 'ja'
     },
     meta: [
       { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=1920px, initial-scale=1' },
+      { name: 'viewport', content: 'width=1920px height=1080px' },
       { hid: 'description', name: 'description', content: '' },
       { name: 'format-detection', content: 'telephone=no' }
     ],
@@ -24,6 +24,7 @@ export default {
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
+    "./Global.css"
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
