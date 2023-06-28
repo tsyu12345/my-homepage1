@@ -1,16 +1,14 @@
 <template>
-    <v-card class="mx-auto">
-        <v-card-title>
-            <v-icon large left color="#26c6da"></v-icon>
-        </v-card-title>
-        <v-flex xs12>
-            <Timeline 
-                :id="user_id" 
-                sourceType="profile" 
-                :options="{ tweetLimit: '3' }" />
-        </v-flex>
-    </v-card>
-</template>
+    <Timeline 
+        :id="user_id" 
+        :sourceType="profile" 
+        :options="{
+            height: height,
+            width: width,
+            tweetLimit: displayCount
+        }"
+    />
+</template>'
 
 <script>
 import { Timeline } from "vue-tweet-embed";
@@ -21,7 +19,10 @@ export default {
     },
     data: function () {
         return {
-            user_id: "syukunt1"
+            user_id: "syukunt1",
+            profile: "profile",
+            displayCount: 3,
+            height: "565px",
         };
     }
 };
