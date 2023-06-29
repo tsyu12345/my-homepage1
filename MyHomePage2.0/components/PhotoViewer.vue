@@ -6,7 +6,7 @@
     </ul>
 </template>
 
-<script lang="ts">
+<script lang="js">
 import { VueperSlides, VueperSlide } from 'vueperslides'
 import 'vueperslides/dist/vueperslides.css'
 

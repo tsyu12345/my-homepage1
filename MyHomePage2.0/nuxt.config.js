@@ -13,7 +13,7 @@ export default {
     },
     meta: [
       { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=1920px height=1080px' },
+      { name: 'viewport', content: 'width=1920 initial-scale=1.0' },
       { hid: 'description', name: 'description', content: '' },
       { name: 'format-detection', content: 'telephone=no' }
     ],
