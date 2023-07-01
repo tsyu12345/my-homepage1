@@ -5,19 +5,19 @@
         {{ name.first }} <br> {{ name.second }}
       </h1>
     </div>
-    <div id="content-area" class="h-4/5 flex pl-[60px] py-[40px]">
-      <div id="TwitteriFrame-area" class="w-[35%]">
+    <div id="content-area" class="w-full h-4/5 flex pl-[60px] py-[40px]">
+      <div id="TwitteriFrame-area" class="w-[37%] h-fit">
         <TwitteriFrame />
       </div>
-      <div id="menu-area" class="p-[120px]">
-        <ul class="text-cyan-900 text-5xl text-center ">
+      <div id="menu-area" class="px-20 my-auto">
+        <ul class="text-cyan-900 text-5xl text-center pb-10">
           <ol v-for="item in menu" :key="item" class="mt-[15%]">
             <a href="#" class="hover:text-blue-900">{{ item }}</a>
           </ol>
         </ul>
       </div>
       <div id="github-grass-area"></div>
-      <div id="photos-area" class="w-1/3 h-[93%] ml-auto absolute top-0 right-0">
+      <div id="photos-area" class="w-1/3 h-[92.8%] ml-auto absolute top-0 right-0">
         <PhotoViewer />
       </div>
     </div>
