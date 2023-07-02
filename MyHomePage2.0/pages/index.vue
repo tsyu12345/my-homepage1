@@ -5,7 +5,7 @@
         {{ name.first }} <br> {{ name.second }}
       </h1>
     </div>
-    <div id="content-area" class="w-full h-4/5 flex pl-[60px] py-[40px]">
+    <div id="content-area" class="w-full h-[70%] flex pl-[60px] py-[40px]">
       <div id="TwitteriFrame-area" class="w-[37%] h-fit">
         <TwitteriFrame />
       </div>
@@ -17,8 +17,10 @@
         </ul>
       </div>
       <div id="github-grass-area"></div>
-      <div id="photos-area" class="w-1/3 h-[92.8%] ml-auto absolute top-0 right-0">
-        <PhotoViewer />
+      <div id="photos-area" class="w-1/3 h-[92%] ml-auto absolute top-0 right-0">
+        <ClientOnly>
+          <PhotoViewer />
+        </ClientOnly>
       </div>
     </div>
     <div id="footer-area" class="border-b-0 border-r-0 border-l-0 border-solid border-2 border-blue-900">
@@ -31,6 +33,7 @@
 import Vue from 'vue'
 import TwitteriFrame from '~/components/TwitteriFrame.vue';
 import PhotoViewer from '~/components/PhotoViewer.vue';
+import "tw-elements/dist/css/tw-elements.min.css";
 
 export default Vue.extend({
   name: 'IndexPage',
