@@ -1,30 +1,34 @@
 <template>
   <div id="container" class="text-blue-900 bg-yellow-100 w-full h-screen overflow-hidden">
-    <div id="title-area" class="ml-[4%] w-fit pt-12">
+    <div id="title-area" class="ml-[4%] w-fit pt-3">
       <h1 class="text-sky-950 font-bold text-4xl">
         {{ name.first }} <br> {{ name.second }}
       </h1>
     </div>
-    <div id="content-area" class="w-full h-[70%] flex pl-[60px] py-[40px]">
+    <div id="content-area" class="w-full h-[75.3%] flex pl-[60px] py-[40px]">
       <div id="TwitteriFrame-area" class="w-[37%] h-fit">
         <TwitteriFrame />
       </div>
-      <div id="menu-area" class="px-20 my-auto">
-        <ul class="text-cyan-900 text-5xl text-center pb-10">
+      <div id="menu-area" class="px-10 h-[75%]">
+        <ul class="h-auto text-cyan-900 text-5xl text-center mt-[20%]">
           <ol v-for="item in menu" :key="item" class="mt-[15%]">
             <a href="#" class="hover:text-blue-900">{{ item }}</a>
           </ol>
         </ul>
       </div>
       <div id="github-grass-area"></div>
-      <div id="photos-area" class="w-1/3 h-[92%] ml-auto absolute top-0 right-0">
+      <div id="photos-area" class="w-1/3 h-[90%] ml-auto absolute top-0 right-0">
         <ClientOnly>
           <PhotoViewer />
         </ClientOnly>
       </div>
     </div>
     <div id="footer-area" class="border-b-0 border-r-0 border-l-0 border-solid border-2 border-blue-900">
-      <div id="link-icons-area"></div>
+      <div id="link-icons-area">
+        <a v-for="link in footLinks" :key="link.name" :href="link.url">
+          <font-awsome-icon :icon="link.icon" />
+        </a>
+      </div>
     </div>
   </div>
 </template>
@@ -41,6 +45,7 @@ export default Vue.extend({
   components: {
     TwitteriFrame,
     PhotoViewer,
+     
   },
 
   data() {
@@ -55,7 +60,28 @@ export default Vue.extend({
         'YouTube',
         'Contact',
       ],
-
+      footLinks: [
+        {
+          name: 'YouTube',
+          icon: ['fab', 'square-youtubek'],
+          url: '',
+        },
+        {
+          name: 'Twitter',
+          icon: ['fab', 'square-twitter'],
+          url: 'https://twitter.com/syukunt1',
+        },
+        {
+          name: 'Instagram',
+          icon: ['fab', 'square-instagram'],
+          url: '',
+        },
+        {
+          name: 'GitHub',
+          icon: ['fab', 'square-github'],
+          url: ''
+        }
+      ]
     }
   },
 })

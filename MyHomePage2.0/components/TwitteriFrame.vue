@@ -1,3 +1,5 @@
+<!--TODO:各種設定項目はコンポ呼び出し側で指定できるようにする。-->
+<!--TODO:まれに通信エラーで表示されないこともあるので、エラーハンドリングする-->
 <template>
     <Timeline 
         :id="user_id" 
@@ -21,8 +23,8 @@ export default {
         return {
             user_id: "syukunt1",
             profile: "profile",
-            displayCount: 3,
-            height: "565px",
+            displayCount: 6,
+            height: "500px",
         };
     }
 };
