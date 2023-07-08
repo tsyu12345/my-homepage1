@@ -26,7 +26,7 @@
     <div id="footer-area" class="border-b-0 border-r-0 border-l-0 border-solid border-2 border-blue-900">
       <div id="link-icons-area">
         <a v-for="link in footLinks" :key="link.name" :href="link.url">
-          <font-awsome-icon :icon="link.icon" />
+          <font-awesome-icon :icon="link.icon" />
         </a>
       </div>
     </div>
@@ -38,6 +38,13 @@ import Vue from 'vue'
 import TwitteriFrame from '~/components/TwitteriFrame.vue';
 import PhotoViewer from '~/components/PhotoViewer.vue';
 import "tw-elements/dist/css/tw-elements.min.css";
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faYoutube, faTwitter, faInstagram, faGithub } from '@fortawesome/free-brands-svg-icons';
+
+//@ts-ignore
+library.add(faYoutube, faTwitter, faInstagram, faGithub)
+
 
 export default Vue.extend({
   name: 'IndexPage',
@@ -45,7 +52,7 @@ export default Vue.extend({
   components: {
     TwitteriFrame,
     PhotoViewer,
-     
+    FontAwesomeIcon
   },
 
   data() {
@@ -63,7 +70,7 @@ export default Vue.extend({
       footLinks: [
         {
           name: 'YouTube',
-          icon: ['fab', 'square-youtubek'],
+          icon: ['fab', 'square-youtube'],
           url: '',
         },
         {
@@ -84,6 +91,10 @@ export default Vue.extend({
       ]
     }
   },
+
+  mounted() {
+    //library.add(faUserSecret) //ts-ignore
+  }
 })
 
 </script>
