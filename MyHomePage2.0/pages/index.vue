@@ -23,10 +23,11 @@
         </ClientOnly>
       </div>
     </div>
-    <div id="footer-area" class="border-b-0 border-r-0 border-l-0 border-solid border-2 border-blue-900">
-      <div id="link-icons-area">
-        <a v-for="link in footLinks" :key="link.name" :href="link.url">
-          <font-awesome-icon :icon="link.icon" />
+    <div id="footer-area" class="h-[10%] border-b-0 border-r-0 border-l-0 border-solid border-2 border-blue-900">
+      <div id="link-icons-area" class="w-[20%] ml-[75%] mt-[1%] text-black">
+        <a v-for="link in footLinks" :key="link.name" :href="link.url" class="m-[2%]">
+          <!--<font-awesome-icon :icon="link.icon" />-->
+          <i :class="[link.icon[0], link.icon[1]]" class="fa-4x"></i>
         </a>
       </div>
     </div>
@@ -34,17 +35,25 @@
 </template>
 
 <script lang="ts">
-import Vue from 'vue'
+import Vue from 'vue';
 import TwitteriFrame from '~/components/TwitteriFrame.vue';
 import PhotoViewer from '~/components/PhotoViewer.vue';
 import "tw-elements/dist/css/tw-elements.min.css";
+
+/*
+TODO:なぜかfontawesomeが読み込めないので、いずれ直す。現在はCDNで読み込んでいる。
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
+import { faUserSecret } from '@fortawesome/free-solid-svg-icons'
 import { library } from '@fortawesome/fontawesome-svg-core';
+//@ts-ignore
 import { faYoutube, faTwitter, faInstagram, faGithub } from '@fortawesome/free-brands-svg-icons';
 
 //@ts-ignore
 library.add(faYoutube, faTwitter, faInstagram, faGithub)
+library.add(faUserSecret as any)
 
+Vue.component('font-awesome-icon', FontAwesomeIcon)
+*/
 
 export default Vue.extend({
   name: 'IndexPage',
@@ -52,7 +61,6 @@ export default Vue.extend({
   components: {
     TwitteriFrame,
     PhotoViewer,
-    FontAwesomeIcon
   },
 
   data() {
@@ -70,22 +78,22 @@ export default Vue.extend({
       footLinks: [
         {
           name: 'YouTube',
-          icon: ['fab', 'square-youtube'],
+          icon: ['fa-brands', 'fa-square-youtube'],
           url: '',
         },
         {
           name: 'Twitter',
-          icon: ['fab', 'square-twitter'],
+          icon: ['fa-brands', 'fa-square-twitter'],
           url: 'https://twitter.com/syukunt1',
         },
         {
           name: 'Instagram',
-          icon: ['fab', 'square-instagram'],
+          icon: ['fa-brands', 'fa-square-instagram'],
           url: '',
         },
         {
           name: 'GitHub',
-          icon: ['fab', 'square-github'],
+          icon: ['fa-brands', 'fa-square-github'],
           url: ''
         }
       ]
