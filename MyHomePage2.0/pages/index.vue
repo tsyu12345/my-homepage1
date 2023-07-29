@@ -1,33 +1,33 @@
 <template>
-  <div id="container" class="text-blue-900 bg-yellow-100 w-full h-screen overflow-hidden">
+  <div id="container" class="text-blue-900 bg-yellow-100 w-full h-full overflow-hidden">
     <div id="title-area" class="ml-[4%] w-fit pt-3">
       <h1 class="text-sky-950 font-bold text-4xl">
         {{ name.first }} <br> {{ name.second }}
       </h1>
     </div>
-    <div id="content-area" class="w-full h-[75.3%] flex pl-[60px] py-[40px]">
+    <div id="content-area" class="w-full pl-[60px]">
       <div id="TwitteriFrame-area" class="w-[37%] h-fit">
         <TwitteriFrame />
       </div>
-      <div id="menu-area" class="px-10 h-[75%]">
-        <ul class="h-auto text-cyan-900 text-5xl text-center mt-[20%]">
-          <ol v-for="item in menu" :key="item" class="mt-[15%]">
+      <div id="menu-area" class="w-fit ml-[40%] relative top-[-440px]">
+        <ul class="h-auto text-cyan-900 text-5xl text-center">
+          <ol v-for="item in menu" :key="item" class="mt-10">
             <a href="#" class="hover:text-blue-900">{{ item }}</a>
           </ol>
         </ul>
       </div>
       <div id="github-grass-area"></div>
-      <div id="photos-area" class="w-1/3 h-[90%] ml-auto absolute top-0 right-0">
+      <div id="photos-area" class="w-1/3 h-full ml-auto absolute top-0 right-0">
         <ClientOnly>
           <PhotoViewer />
         </ClientOnly>
       </div>
     </div>
-    <div id="footer-area" class="h-[10%] border-b-0 border-r-0 border-l-0 border-solid border-2 border-blue-900">
-      <div id="link-icons-area" class="w-[20%] ml-[75%] mt-[1%] text-black">
+    <div id="footer-area" class="h-[20%] border-b-0 border-r-0 border-l-0 border-solid border-2 border-blue-900">
+      <div id="link-icons-area" class="h-[45%] w-[20%] ml-[75%] mt-[1%] text-black">
         <a v-for="link in footLinks" :key="link.name" :href="link.url" class="m-[2%]">
           <!--<font-awesome-icon :icon="link.icon" />-->
-          <i :class="[link.icon[0], link.icon[1]]" class="fa-4x"></i>
+          <i :class="[link.icon[0], link.icon[1]]" class="fa-2x"></i>
         </a>
       </div>
     </div>

@@ -12,8 +12,8 @@ export default {
       lang: 'ja'
     },
     meta: [
-      { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=1920, initial-scale=1' },
+      { charset: "utf-8" },
+      { name: "viewport", content: "width=1920 , height=1080" },
       { hid: 'description', name: 'description', content: '' },
       { name: 'format-detection', content: 'telephone=no' }
     ],
