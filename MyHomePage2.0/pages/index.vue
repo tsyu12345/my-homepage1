@@ -9,12 +9,13 @@
       </div>
       <div id="content-area" class="w-full h-full col-span-3 grid grid-cols-3">
         <div id="TwitteriFrame-area" class="h-fit col-span-1 p-10">
-          <TwitteriFrame />
+          <TwitteriFrame userId="syukunt1" sourceType="profile" />
         </div>
-        <div id="menu-area" class="col-span-1 w-full">
+        <div id="menu-area" class="col-span-1 w-full pt-[20%] pr-[20%]">
           <ul class="h-auto text-cyan-900 text-5xl mt-[4.5rem] text-center">
             <ol v-for="item in menu" :key="item" class="mt-12">
               <a href="#" class="hover:text-blue-900">{{ item }}</a>
+              <span class="absolute left-1/2 transform -translate-x-1/2 w-0 h-[2px] bg-blue-900 transition-all duration-300 group-hover:w-full bottom-0"></span>
             </ol>
           </ul>
         </div>
@@ -82,7 +83,7 @@ export default Vue.extend({
         {
           name: 'GitHub',
           icon: ['fa-brands', 'fa-square-github'],
-          url: ''
+          url: 'https://github.com/tsyu12345'
         }
       ],
       backgroundGif: require('~/static/images/ocean-wave-92-simple-drawing-blue-wave.gif'),
